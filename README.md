@@ -1,6 +1,7 @@
 # BinanceTradingBot
 
 To initialize TradingBot, you have to specify several parameters
+- Auto Trade Period (e.g. 30 second)
 - Symbol (e.g. BTCUSDT)
 - Target Quantity (upper bounded by free balance)
 - Period of Moving Average Line 1 (e.g. 3)
