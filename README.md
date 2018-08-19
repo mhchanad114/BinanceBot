@@ -14,5 +14,5 @@ After that, you can call StartAutoTrade to start auto trading, the flow is as be
 - Get candle data
 - Caluclate Moving Average of the latest 2 candles: CurrentCandle & PreviousCandle
 - if (CurrentCandle Moving Average 1 > CurrentCandle Moving Average 2) && (PreviousCandle Moving Average 1 < PreviousCandle Moving Average 2)
-  then MA1 Cross above MA2, the bot then cancel Sell order & create New Buy order
-- And if MA1 Cross below MA2, bot then cancel  Buy order & create New Sell order
+  then MA1 Cross above MA2, the bot then cancel Sell order & create New Buy order (current only support new market order)
+- And if MA1 Cross below MA2, bot then cancel Buy order & create New Sell order (current only support new market order)
