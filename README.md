@@ -8,10 +8,10 @@ To initialize TradingBot, you have to specify several parameters
 - Candle Interval (e.g. 1 minute)
 - Candle Size (e.g. 50)
 
-After that, you can call StartAutoTrade to start auto trading, the flow is as below, for every 10 seconds
+After that, you can call StartAutoTrade to start auto trading, the flow is as below, for every 30 seconds
 - Display account information
 - Display open order
-- Get candle data (since Candle Interval has minimum value of 1min but the bot loop every 10 seconds, so candle data may be the same as previous one. In that case, no action will be done)
+- Get candle data (since Candle Interval has minimum value of 1min but the bot loops every 30 seconds, so candle data may be the same as previous one. In that case, no action will be done)
 - Caluclate Moving Average of the latest 2 candles: CurrentCandle & PreviousCandle
 - Trade decision is based on the crossover of 2 Moving Average Line
 - if (CurrentCandle Moving Average 1 > CurrentCandle Moving Average 2) AND (PreviousCandle Moving Average 1 < PreviousCandle Moving Average 2), then MA1 Cross above MA2, the bot then cancel Sell order & create New Buy order (current only support new market order)
